@@ -32,7 +32,7 @@ function calculateTotal(cartItems) {
 function applyDiscount(total, discountRate) {
  if (typeof total !== 'number' || total < 0) return 0;
     if (typeof discountRate !== 'number' || discountRate < 0 || discountRate > 1){
-  console.warn("Invalid discount rate. No discount applied.");
+  console.error("Invalid discount rate. No discount applied.");
       return total;
 
   }
